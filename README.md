@@ -3,8 +3,9 @@ Create and run a simple dag to download and process stock data.
 
 This basic project uses the sequential executor, SQLite, and stores data in a local directory
 <br/>
---------------
 ### Instructions
+
+--------------
 1. Create a virtual python environment
 2. Activate your environment
 3. Pip install Airflow
