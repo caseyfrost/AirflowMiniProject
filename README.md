@@ -2,7 +2,7 @@
 Create and run a simple dag to download and process stock data.
 
 This basic project uses the sequential executor, SQLite, and stores data in a local directory
-<br/>
+
 ---------
 ## Instructions
 
