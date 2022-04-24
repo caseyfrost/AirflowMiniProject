@@ -29,11 +29,23 @@ def query(data_loc, today_date):
     df = pd.read_csv(f'{data_loc}/AAPL_{today_date}.csv')
     print('AAPL Dataframe Head:')
     print(df.head())
+    print('----------------')
+    print('AAPL Count:')
+    print(len(df))
+    print('----------------')
+    print('AAPL Total Volume:')
+    print(df['Volume'].sum())
 
     print('----------------')
     df = pd.read_csv(f'{data_loc}/TSLA_{today_date}.csv')
     print('TSLA Dataframe Head:')
     print(df.head())
+    print('----------------')
+    print('TSLA Count:')
+    print(len(df))
+    print('----------------')
+    print('TSLA Total Volume:')
+    print(df['Volume'].sum())
 
 
 dag = DAG(
