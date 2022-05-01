@@ -1,7 +1,9 @@
 # AirflowMiniProject
-Create and run a simple dag to download and process stock data.
+1. Create and run a simple dag to download and process stock data.
 
 This basic project uses the sequential executor, SQLite, and stores data in a local directory
+
+2. Create and run a simple dag to check the Airflow logs for error messages, count them, and return the count of error messages and the error messages themselves.
 
 
 ## Instructions
@@ -20,7 +22,7 @@ This basic project uses the sequential executor, SQLite, and stores data in a lo
 12. To test the dag you can trigger it
 
 
-## Outputs
+## Stock Download Output
 
 1. each time the script runs, and there is stock data to download, two csv files, one for APPL and one for TSLA, will be created in a directory named after that day's date.
 2. ![Screen Shot 2022-05-01 at 10 23 57 AM](https://user-images.githubusercontent.com/20688436/166157087-36f3a51d-a736-4840-af81-02bb856c5379.png)
@@ -28,5 +30,11 @@ This basic project uses the sequential executor, SQLite, and stores data in a lo
 4. ![Screen Shot 2022-05-01 at 10 25 29 AM](https://user-images.githubusercontent.com/20688436/166157130-daf2f022-548c-448e-9634-cab1d1bdfca8.png)
 5. The Airflow UI will also indicate if a job ran and the status of the job.
 6. ![Screen Shot 2022-05-01 at 10 27 41 AM](https://user-images.githubusercontent.com/20688436/166157195-a087c021-2a78-4cac-b275-930148528dca.png)
+
+
+## Log Monitoring Output
+1. When the DAG runs, a message will be printed with the count of error messages, and the error message text.
+2. ![Screen Shot 2022-05-01 at 10 35 06 AM](https://user-images.githubusercontent.com/20688436/166159951-0c8fefda-e430-45c1-a17a-0a175b75ac1c.png)
+
 
 
